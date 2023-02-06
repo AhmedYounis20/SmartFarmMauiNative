@@ -48,4 +48,28 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Remove="Resources\Images\dashboard.png" />
+	  <None Remove="Resources\Images\humidity66.png" />
+	  <None Remove="Resources\Images\settings.png" />
+	  <None Remove="Resources\Images\sun.png" />
+	  <None Remove="Resources\Images\sun96.png" />
+	  <None Remove="Resources\Images\temperature.png" />
+	  <None Remove="Resources\Images\temperature100.png" />
+	  <None Remove="Resources\Images\wind.gif" />
+	  <None Remove="Resources\Images\wind90.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Pages\DashboardPage.xaml.cs">
+	    <DependentUpon>DashboardPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Pages\Settings.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartFarm.DashboardPage"
+             Title="Dashboard"
+             >
+    <ContentPage.Resources>
+            
+        <Style x:Key="FrameIconStyle" TargetType="Frame">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="HeightRequest" Value="170"/>
+            <Setter Property="WidthRequest" Value="155"/>
+        </Style>
+        <Style x:Key="FrameTextStyle" TargetType="Label">
+            <Setter Property="TextColor" Value="BlueViolet"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+            <Setter Property="Margin"  Value="5,2,2,2"/>
+        </Style>
+
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <!--<VerticalStackLayout
+            Spacing="5"
+            Padding="30,0"
+            VerticalOptions="Start"
+            HorizontalOptions="Center">
+            <HorizontalStackLayout >
+                <Frame Style="{StaticResource FrameIconStyle}" >
+                    <VerticalStackLayout>
+                        <Image Source="temperature100.png" Aspect="AspectFit"/>
+                        <Label
+                            Text="Temprature"
+                            Style="{StaticResource FrameTextStyle}" />
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Style="{StaticResource FrameIconStyle}">
+                    <VerticalStackLayout>
+                        <Image Source="wind90.png" Aspect="AspectFit"/>
+                        <Label
+                            Text="Wind"
+                            Margin="15"
+                            Style="{StaticResource FrameTextStyle}"/>
+                    </VerticalStackLayout>
+                </Frame>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Frame Style="{StaticResource FrameIconStyle}" >
+                    <VerticalStackLayout>
+                        <Image Source="humidity66.png" Margin="15" />
+                        <Label
+                            Text="Humidity"
+                            Style="{StaticResource FrameTextStyle}"/>
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Style="{StaticResource FrameIconStyle}">
+                    <VerticalStackLayout>
+                        <Image Source="sun96.png"/>
+                        <Label
+                            Text="Sun Light"
+                            Style="{StaticResource FrameTextStyle}" />
+                    </VerticalStackLayout>
+                </Frame>
+            </HorizontalStackLayout>
+  
+        </VerticalStackLayout>-->
+    </ScrollView>
+
+</ContentPage>
